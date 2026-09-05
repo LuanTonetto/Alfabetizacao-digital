@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprenda Internet - Alfabetização Digital</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+
+        nav {
+            background-color: #1e40af;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav button {
+            background-color: #3b82f6;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            margin: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        nav button:hover {
+            background-color: #1e40af;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        nav button.active {
+            background-color: #059669;
+            box-shadow: 0 4px 12px rgba(5, 150, 105, 0.4);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .content {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .home-section {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .home-section h2 {
+            font-size: 2em;
+            color: #2563eb;
+            margin-bottom: 20px;
+        }
+
+        .home-section p {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .tutorial-card {
+            background: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-left: 5px solid #2563eb;
+        }
+
+        .tutorial-card h2 {
+            color: #2563eb;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .tutorial-card h3 {
+            color: #1e40af;
+            font-size: 1.5em;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .tutorial-card p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .step {
+            background-color: #eff6ff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            border-left: 4px solid #3b82f6;
+        }
+
+        .step strong {
+            color: #2563eb;
+            font-size: 1.1em;
+        }
+
+        .step p {
+            margin-top: 10px;
+            font-size: 1.05em;
+        }
+
+        .glossario-item {
+            background-color: #f0fdf4;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            border-left: 4px solid #059669;
+        }
+
+        .glossario-item strong {
+            color: #059669;
+            font-size: 1.1em;
+        }
+
+        .dica-seguranca {
+            background-color: #fef3c7;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            border-left: 4px solid #d97706;
+        }
+
+        .dica-seguranca strong {
+            color: #d97706;
+            font-size: 1.1em;
+        }
+
+        .alerta {
+            background-color: #fee2e2;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            border-left: 4px solid #dc2626;
+            color: #991b1b;
+        }
+
+        .botao-principal {
+            background-color: #2563eb;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .botao-principal:hover {
+            background-color: #1e40af;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        }
+
+        footer {
+            background-color: #1e40af;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+
+        .contato-info {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .contato-info h3 {
+            color: #2563eb;
+            margin-bottom: 20px;
+        }
+
+        .contato-item {
+            padding: 15px 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .contato-item:last-child {
+            border-bottom: none;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            nav button {
+                padding: 10px 15px;
+                font-size: 0.9em;
+                margin: 3px;
+            }
+
+            .home-section {
+                padding: 20px;
+            }
+
+            .tutorial-card {
+                padding: 20px;
+            }
+        }
+
+        .menu-icon {
+            display: none;
+            background-color: #3b82f6;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            nav button {
+                flex: 1 1 48%;
+                margin: 5px 2px;
+                font-size: 0.9em;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🌐 Aprenda Internet</h1>
+        <p>Seu guia prático e seguro para o mundo digital</p>
+    </header>
+
+    <nav>
+        <button onclick="mostrarSecao('home')" class="nav-btn active">Início</button>
+        <button onclick="mostrarSecao('email')" class="nav-btn">Como usar Email</button>
+        <button onclick="mostrarSecao('busca')" class="nav-btn">Buscar na Internet</button>
+        <button onclick="mostrarSecao('seguranca')" class="nav-btn">Dicas de Segurança</button>
+        <button onclick="mostrarSecao('glossario')" class="nav-btn">Glossário</button>
+        <button onclick="mostrarSecao('contato')" class="nav-btn">Contato</button>
+    </nav>
+
+    <div class="container">
+        <!-- HOME -->
+        <div id="home" class="content active">
+            <div class="home-section">
+                <h2>Bem-vindo!</h2>
+                <p>Este site foi criado especialmente para ajudá-lo a aprender sobre a internet de forma simples e segura.</p>
+                <p>Não é necessário ter experiência anterior. Vamos aprender juntos!</p>
+            </div>
+
+            <div class="home-section">
+                <h3>O que você vai aprender:</h3>
+                <p>✉️ Como enviar e-mails</p>
+                <p>🔍 Como buscar informações na internet</p>
+                <p>🔒 Como ficar seguro online</p>
+                <p>📖 Palavras técnicas explicadas de forma simples</p>
+            </div>
+
+            <div class="home-section">
+                <p style="font-weight: bold; color: #2563eb; font-size: 1.3em;">
+                    Use o menu acima para começar a aprender!
+                </p>
+            </div>
+        </div>
+
+        <!-- EMAIL -->
+        <div id="email" class="content">
+            <div class="tutorial-card">
+                <h2>Como Usar Email</h2>
+                
+                <h3>O que é Email?</h3>
+                <p>Email (ou correio eletrônico) é uma forma de enviar mensagens pela internet. É como enviar uma carta, mas instantaneamente!</p>
+
+                <h3>Criando sua conta de email</h3>
+                <div class="step">
+                    <strong>Passo 1: Abra o navegador</strong>
+                    <p>Clique no ícone do navegador (Chrome, Firefox, Edge, etc.)</p>
+                </div>
+
+                <div class="step">
+                    <strong>Passo 2: Vá para o Gmail</strong>
+                    <p>Digite na barra de endereço: <strong>www.gmail.com</strong></p>
+                </div>
+
+                <div class="step">
+                    <strong>Passo 3: Clique em "Criar Conta"</strong>
+                    <p>Procure pelo botão "Criar conta" ou "Sign up"</p>
+                </div>
+
+                <div class="step">
+                    <strong>Passo 4: Preencha os dados</strong>
+                    <p>Digite seu nome, escolha um nome de usuário (seu email) e uma senha segura</p>
+                </div>
+
+                <h3>Enviando um email</h3>
+                <div class="step">
+                    <strong>1. Clique em "Escrever"</strong>
+                    <p>Procure este botão no lado esquerdo da tela</p>
+                </div>
+
+                <div class="step">
+                    <strong>2. Preencha os campos</strong>
+                    <p><strong>Para:</strong> endereço de quem vai receber<br>
+                       <strong>Assunto:</strong> o tema do email<br>
+                       <strong>Mensagem:</strong> o que você quer dizer</p>
+                </div>
+
+                <div class="step">
+                    <strong>3. Clique em "Enviar"</strong>
+                    <p>Seu email será entregue em segundos!</p>
+                </div>
+
+                <div class="dica-seguranca">
+                    <strong>💡 Dica importante:</strong> Nunca compartilhe sua senha com ninguém. Nem mesmo amigos ou familiares!
+                </div>
+            </div>
+        </div>
+
+        <!-- BUSCA -->
+        <div id="busca" class="content">
+            <div class="tutorial-card">
+                <h2>Como Buscar na Internet</h2>
+
+                <h3>O que é um buscador?</h3>
+                <p>Um buscador é uma ferramenta que ajuda a encontrar informações na internet. O mais conhecido é o Google.</p>
+
+                <h3>Passo a passo para buscar</h3>
+                
+                <div class="step">
+                    <strong>Passo 1: Abra um buscador</strong>
+                    <p>Digite na barra do navegador: <strong>www.google.com.br</strong></p>
+                </div>
+
+                <div class="step">
+                    <strong>Passo 2: Clique na caixa de busca</strong>
+                    <p>A caixa de busca é o retângulo branco no meio da página</p>
+                </div>
+
+                <div class="step">
+                    <strong>Passo 3: Digite o que você procura</strong>
+                    <p>Por exemplo: "receita de bolo", "endereço da prefeitura", "como cuidar de plantas"</p>
+                </div>
+
+                <div class="step">
+                    <strong>Passo 4: Pressione ENTER ou clique no botão de busca</strong>
+                    <p>A página mostrará vários resultados com informações relacionadas</p>
+                </div>
+
+                <h3>Dicas para buscas melhores</h3>
+                <p>✓ Use palavras simples e claras</p>
+                <p>✓ Se não encontrar, tente outras palavras</p>
+                <p>✓ Leia o título dos resultados primeiro</p>
+                <p>✓ Se a página abrir estranho, volte atrás e tente outro resultado</p>
+
+                <div class="dica-seguranca">
+                    <strong>⚠️ Atenção:</strong> Nem todos os sites que aparecem são seguros. Se algo parecer estranho ou pedir dados pessoais sem motivo, não clique.
+                </div>
+            </div>
+        </div>
+
+        <!-- SEGURANÇA -->
+        <div id="seguranca" class="content">
+            <div class="tutorial-card">
+                <h2>5 Dicas Importantes de Segurança</h2>
+
+                <div class="dica-seguranca">
+                    <strong>1. Proteja sua senha</strong>
+                    <p>✓ Use senhas com letras, números e símbolos<br>
+                       ✓ Não use datas de nascimento ou nomes<br>
+                       ✓ Não conte sua senha para ninguém<br>
+                       ✓ Use senhas diferentes para contas diferentes</p>
+                </div>
+
+                <div class="dica-seguranca">
+                    <strong>2. Cuidado com emails estranhos</strong>
+                    <p>✓ Não clique em links de emails desconhecidos<br>
+                       ✓ Não baixe anexos de pessoas que não conhece<br>
+                       ✓ Bancos nunca pedem sua senha por email<br>
+                       ✓ Desconfie de ofertas muito boas para ser verdade</p>
+                </div>
+
+                <div class="dica-seguranca">
+                    <strong>3. Cuidado com o que você compartilha</strong>
+                    <p>✓ Não compartilhe seu CPF ou RG online<br>
+                       ✓ Não divulgue seu telefone em sites desconhecidos<br>
+                       ✓ Pense bem antes de compartilhar fotos<br>
+                       ✓ Não use a mesma foto de perfil em vários lugares</p>
+                </div>
+
+                <div class="dica-seguranca">
+                    <strong>4. Verifique os sites antes de usar</strong>
+                    <p>✓ Sites legítimos começam com "https://" (note o "s")<br>
+                       ✓ Procure por um cadeado 🔒 na barra de endereços<br>
+                       ✓ Quando em dúvida, busque o site pelo Google<br>
+                       ✓ Leia as avaliações de outros usuários</p>
+                </div>
+
+                <div class="dica-seguranca">
+                    <strong>5. Atualize seus programas</strong>
+                    <p>✓ Sempre aceite as atualizações do seu navegador<br>
+                       ✓ Mantenha seu sistema operacional atualizado<br>
+                       ✓ Use um antivírus (muitos são gratuitos)<br>
+                       ✓ Faça scans regularmente</p>
+                </div>
+
+                <div class="alerta">
+                    <strong>⚠️ Se algo ruim acontecer:</strong><br>
+                    Se você acha que foi enganado na internet, não tenha vergonha. Procure ajuda de alguém de confiança ou denuncie em www.safernet.org.br
+                </div>
+            </div>
+        </div>
+
+        <!-- GLOSSÁRIO -->
+        <div id="glossario" class="content">
+            <div class="tutorial-card">
+                <h2>Glossário - Palavras Técnicas Explicadas</h2>
+                <p style="margin-bottom: 30px;">Aqui estão palavras que você pode ouvir ao usar a internet, explicadas de forma simples:</p>
+
+                <div class="glossario-item">
+                    <strong>Navegador:</strong> É o programa que você usa para acessar a internet (Chrome, Firefox, Edge, Safari)
+                </div>
+
+                <div class="glossario-item">
+                    <strong>Website/Site:</strong> É uma página ou conjunto de páginas na internet. Como um estabelecimento online.
+                </div>
+
+                <div class="glossario-item">
+                    <strong>URL:</strong> O endereço de um site (exemplo: www.google.com.br). É escrito na barra de endereços.
+                </div>
+
+                <div class="glossario-item">
+                    <strong>Login:</strong> É quando você entra em uma conta digitando seu usuário e senha.
+                </div>
+
+                <div class="glossario-item">
+                    <strong>Download:</strong> Baixar um arquivo de internet para seu computador.
+                </div>
+
+                <div class="glossario-item">
+                    <strong>Upload:</strong> Enviar um arquivo do seu computador para a internet.
+                </div>
+
+                <div class="glossario-item">
+                    <strong>Cookie:</strong> Um pequeno arquivo que sites salvam no seu computador. Geralmente torna a experiência mais fácil.
+                </div>
+
+                <div class="glossario-item">
+                    <strong>Vírus/Malware:</strong> Programas ruins que danificam seu computador. Se proteja usando antivírus.
+                </div>
+
+                <div class="glossario-item">
+                    <strong>Firewall:</strong> Uma proteção que controla o que entra e sai do seu computador.
+                </div>
+
+                <div class="glossario-item">
+                    <strong>Senha/Password:</strong> Código secreto que você cria para proteger suas contas.
+                </div>
+
+                <div class="glossario-item">
+                    <strong>WiFi/Internet:</strong> Conexão sem fio que permite usar a internet.
+                </div>
+
+                <div class="glossario-item">
+                    <strong>Email:</strong> Também chamado de correio eletrônico. Serviço para enviar mensagens pela internet.
+                </div>
+
+                <div class="glossario-item">
+                    <strong>Hyperlink/Link:</strong> Um texto ou imagem que você clica para ir para outro site.
+                </div>
+
+                <div class="glossario-item">
+                    <strong>Ícone:</strong> Uma pequena imagem que representa um programa ou ação.
+                </div>
+
+                <div class="glossario-item">
+                    <strong>Buscador/Search Engine:</strong> Ferramenta para procurar informações na internet (Google, Bing, etc).
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTATO -->
+        <div id="contato" class="content">
+            <div class="contato-info">
+                <h3>Entre em Contato</h3>
+                <p style="margin-bottom: 20px;">Tem dúvidas ou sugestões? Procure a equipe do projeto!</p>
+
+                <div class="contato-item">
+                    <strong>📍 Local:</strong><br>
+                    Centro de Acolhimento de Ribeirão Preto<br>
+                    Ribeirão Preto - SP
+                </div>
+
+                <div class="contato-item">
+                    <strong>👤 Responsável pelo Projeto:</strong><br>
+                    Luan Henrique Tonetto<br>
+                    Estudante do CST em Análise e Desenvolvimento de Sistemas<br>
+                    UNINTER - Centro Universitário Internacional
+                </div>
+
+                <div class="contato-item">
+                    <strong>💡 Dúvidas Frequentes:</strong><br>
+                    <p style="margin-top: 10px;">P: Posso voltar para a página anterior?<br>
+                    R: Sim! Use o botão de voltar do seu navegador ou clique no menu acima.</p>
+                    <p style="margin-top: 10px;">P: É seguro criar email?<br>
+                    R: Sim! Siga as dicas de segurança que ensinamos aqui.</p>
+                    <p style="margin-top: 10px;">P: Preciso pagar para usar internet?<br>
+                    R: Não! Este site é gratuito. Você só precisa de uma conexão de internet.</p>
+                </div>
+            </div>
+
+            <div class="home-section">
+                <h3>Parabéns!</h3>
+                <p>Você completou o tour pelo nosso site educativo!</p>
+                <p>Agora você conhece os básicos de como usar a internet com segurança.</p>
+                <p style="color: #2563eb; font-weight: bold; font-size: 1.1em;">
+                    Continue aprendendo e não tenha medo de explorar! 🚀
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>Aprenda Internet - Alfabetização Digital Básica</strong></p>
+        <p>Projeto Extensionista - Tecnologia Aplicada à Inclusão Digital</p>
+        <p>Centro Universitário Internacional UNINTER - Escola Superior Politécnica</p>
+        <p style="margin-top: 15px; opacity: 0.9;">© 2025 - Todos os direitos reservados</p>
+    </footer>
+
+    <script>
+        function mostrarSecao(id) {
+            // Esconder todas as seções
+            const conteudos = document.querySelectorAll('.content');
+            conteudos.forEach(conteudo => {
+                conteudo.classList.remove('active');
+            });
+
+            // Remover classe ativa de todos os botões
+            const botoes = document.querySelectorAll('.nav-btn');
+            botoes.forEach(botao => {
+                botao.classList.remove('active');
+            });
+
+            // Mostrar a seção selecionada
+            document.getElementById(id).classList.add('active');
+
+            // Marcar o botão como ativo
+            event.target.classList.add('active');
+
+            // Scroll para o topo
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+</html>
