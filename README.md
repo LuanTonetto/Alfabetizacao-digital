@@ -2,7 +2,7 @@
 
 > **Atividade Extensionista I — Tecnologia Aplicada à Inclusão Digital**
 
-Projeto de extensão desenvolvido para promover a **alfabetização digital básica**, por meio da criação de um website educativo acessível e intuitivo.
+Projeto desenvolvido para promover a **alfabetização digital básica**, utilizando uma página web educativa como ferramenta de apoio ao aprendizado e à inclusão digital.
 
 ---
 
@@ -16,141 +16,71 @@ Projeto de extensão desenvolvido para promover a **alfabetização digital bás
 | **Disciplina** | Atividade Extensionista I - Tecnologia Aplicada à Inclusão Digital |
 | **Local**      | Centro de Acolhimento de Ribeirão Preto                            |
 | **Versão**     | 1.0                                                                |
-| **Status**     | ✅ Pronto para entrega                                              |
+| **Status**     | ✅ Concluído                                                        |
 
 ---
 
 ## 🎯 Sobre o Projeto
 
-O projeto consiste na **criação de um website educativo para alfabetização digital básica**, desenvolvido para auxiliar pessoas com pouca familiaridade com computadores, internet e ferramentas digitais.
+O projeto consiste no desenvolvimento de uma **página web educativa voltada à alfabetização digital básica**.
 
-A proposta busca tornar o aprendizado de tecnologia mais simples, acessível e prático, contribuindo para a inclusão digital e para a autonomia dos participantes.
+A proposta é apresentar informações e orientações de forma simples, acessível e intuitiva, auxiliando pessoas com pouca familiaridade com tecnologias digitais.
 
 ### Objetivos
 
-* 💻 Desenvolver conhecimentos básicos sobre tecnologia;
-* 🌐 Apresentar conceitos básicos relacionados à internet;
-* 🔐 Orientar sobre segurança e cuidados no ambiente digital;
+* 💻 Ensinar conceitos básicos de tecnologia;
+* 🌐 Orientar sobre o uso da internet;
+* 🔐 Apresentar cuidados básicos de segurança digital;
 * 📱 Incentivar o uso consciente de dispositivos digitais;
-* 🧑‍🏫 Facilitar o aprendizado por meio de conteúdo simples e didático;
+* 🧑‍🏫 Facilitar o acesso ao conhecimento digital;
 * 🤝 Contribuir para a inclusão e autonomia digital.
 
 ---
 
 ## 🌎 Objetivos de Desenvolvimento Sustentável
 
-O projeto está alinhado aos seguintes **ODS**:
+O projeto está relacionado aos seguintes **ODS da Organização das Nações Unidas**:
 
 ### ODS 04 — Educação de Qualidade
 
-Contribuir para o acesso ao conhecimento e para o desenvolvimento de competências digitais.
+Contribuir para o acesso à educação e ao desenvolvimento de conhecimentos e habilidades digitais.
 
 ### ODS 10 — Redução das Desigualdades
 
-Utilizar a tecnologia como ferramenta de inclusão e redução das desigualdades no acesso ao conhecimento digital.
+Utilizar a tecnologia como ferramenta de inclusão, contribuindo para reduzir desigualdades no acesso ao conhecimento digital.
 
 ---
 
-## 🌐 Website do Projeto
+## 🌐 Acesse o Projeto
 
-### 🚀 [ACESSAR O WEBSITE DE ALFABETIZAÇÃO DIGITAL](https://luantonetto.github.io/Alfabetizacao-digital/)
+### 🚀 [ACESSAR A PÁGINA DE ALFABETIZAÇÃO DIGITAL](https://luantonetto.github.io/Alfabetizacao-digital/)
 
-O website está publicado utilizando **GitHub Pages** e pode ser acessado diretamente pelo navegador.
+A página está disponível online por meio do **GitHub Pages**.
 
-**Disponível para:**
+**Utilização prevista:**
 
-* ✅ Demonstração ao vivo;
-* ✅ Testes de usabilidade;
+* ✅ Demonstração do projeto;
 * ✅ Apresentação para a comunidade;
-* ✅ Apoio às atividades de alfabetização digital.
+* ✅ Apoio ao aprendizado de conceitos digitais;
+* ✅ Testes de usabilidade;
+* ✅ Aplicação da proposta extensionista.
 
 ---
 
-## 📂 Estrutura do Projeto
+## 🧪 Status
 
-```text
-📦 Alfabetizacao-digital
-│
-├── 📄 README.md
-├── 📄 LEIA_PRIMEIRO.md
-│
-├── 🌐 alfabetizacao_digital.html
-│
-├── 📑 Trabalho_Final_Completo.md
-├── 📋 Plano_Execucao_Projeto.md
-├── 🛠️ Ferramentas_Praticas.md
-└── ✅ Checklist_Progresso.md
-```
+🟢 **PROJETO CONCLUÍDO**
 
----
-
-## 📚 Documentação
-
-| Arquivo                                                            | Descrição                         |
-| ------------------------------------------------------------------ | --------------------------------- |
-| 📑 [Trabalho Final Completo](./Trabalho_Final_Completo.md)         | Relatório completo do projeto     |
-| 🌐 [Website](https://luantonetto.github.io/Alfabetizacao-digital/) | Acesso ao website publicado       |
-| 📋 [Plano de Execução](./Plano_Execucao_Projeto.md)                | Planejamento e etapas de execução |
-| 🛠️ [Ferramentas Práticas](./Ferramentas_Praticas.md)              | Templates, materiais e roteiros   |
-| ✅ [Checklist de Progresso](./Checklist_Progresso.md)               | Acompanhamento das atividades     |
-| 📖 [Leia Primeiro](./LEIA_PRIMEIRO.md)                             | Guia inicial de utilização        |
-
----
-
-## 🧭 Como Utilizar
-
-### 1. Consulte a documentação
-
-Comece pelo [Trabalho Final Completo](./Trabalho_Final_Completo.md) para conhecer o projeto, seus objetivos, metodologia e resultados.
-
-### 2. Acesse o website
-
-👉 **[Clique aqui para acessar o projeto online](https://luantonetto.github.io/Alfabetizacao-digital/)**
-
-### 3. Consulte os materiais complementares
-
-Utilize o plano de execução, as ferramentas práticas e o checklist para acompanhar as etapas do projeto.
-
----
-
-## 🗓️ Metodologia
-
-O projeto foi estruturado utilizando uma metodologia dividida em **5 fases**, contemplando desde o planejamento até a avaliação da proposta.
-
-O cronograma previsto possui duração de **12 dias**, abrangendo as etapas de desenvolvimento, preparação, aplicação e validação.
-
----
-
-## ✨ Principais Entregas
-
-* ✅ Identificação acadêmica completa;
-* ✅ Definição do tema e objetivos;
-* ✅ Alinhamento com os ODS 04 e 10;
-* ✅ Metodologia estruturada em 5 fases;
-* ✅ Cronograma de 12 dias;
-* ✅ Website educativo funcional;
-* ✅ Publicação do website via GitHub Pages;
-* ✅ Materiais e documentação complementar;
-* ✅ Considerações finais;
-* ✅ Referências bibliográficas.
-
----
-
-## 🧪 Status do Projeto
-
-**Versão:** `1.0`
-
-**Status:** 🟢 **PRONTO PARA ENTREGA**
-
+**Versão:** 1.0
 **Data de criação:** Setembro de 2025
 
 ---
 
 ## 🎓 Finalidade Acadêmica
 
-Este repositório reúne os materiais produzidos para a **Atividade Extensionista I - Tecnologia Aplicada à Inclusão Digital**, documentando o desenvolvimento de uma solução tecnológica com finalidade educacional e social.
+Este projeto foi desenvolvido como parte da **Atividade Extensionista I - Tecnologia Aplicada à Inclusão Digital**, do curso de **CST em Análise e Desenvolvimento de Sistemas**.
 
-O projeto busca demonstrar como conhecimentos de desenvolvimento de sistemas podem ser aplicados na criação de ferramentas que contribuam para a **inclusão digital e o acesso à tecnologia**.
+A proposta demonstra a aplicação de conhecimentos de desenvolvimento web na criação de uma solução com finalidade **educacional, social e extensionista**.
 
 ---
 
@@ -162,4 +92,4 @@ O projeto busca demonstrar como conhecimentos de desenvolvimento de sistemas pod
 
 ---
 
-> 💡 **Projeto desenvolvido com finalidade acadêmica e extensionista, utilizando a tecnologia como ferramenta de educação e inclusão digital.**
+> 💡 **Tecnologia como ferramenta de educação, inclusão e autonomia digital.**
