@@ -4,8 +4,6 @@
 
 Projeto de extensão desenvolvido para promover a **alfabetização digital básica**, por meio da criação de um website educativo acessível e intuitivo.
 
-O projeto foi desenvolvido como parte do curso de **CST em Análise e Desenvolvimento de Sistemas**, com aplicação prática de conhecimentos de tecnologia voltados à inclusão digital.
-
 ---
 
 ## 👨‍🎓 Informações Acadêmicas
@@ -17,7 +15,6 @@ O projeto foi desenvolvido como parte do curso de **CST em Análise e Desenvolvi
 | **Curso**      | CST em Análise e Desenvolvimento de Sistemas                       |
 | **Disciplina** | Atividade Extensionista I - Tecnologia Aplicada à Inclusão Digital |
 | **Local**      | Centro de Acolhimento de Ribeirão Preto                            |
-| **Etapa**      | Validação da proposta                                              |
 | **Versão**     | 1.0                                                                |
 | **Status**     | ✅ Pronto para entrega                                              |
 
@@ -31,10 +28,10 @@ A proposta busca tornar o aprendizado de tecnologia mais simples, acessível e p
 
 ### Objetivos
 
-* 📱 Desenvolver conhecimentos básicos sobre tecnologia;
-* 💻 Incentivar o uso consciente de computadores e dispositivos digitais;
+* 💻 Desenvolver conhecimentos básicos sobre tecnologia;
 * 🌐 Apresentar conceitos básicos relacionados à internet;
 * 🔐 Orientar sobre segurança e cuidados no ambiente digital;
+* 📱 Incentivar o uso consciente de dispositivos digitais;
 * 🧑‍🏫 Facilitar o aprendizado por meio de conteúdo simples e didático;
 * 🤝 Contribuir para a inclusão e autonomia digital.
 
@@ -42,7 +39,7 @@ A proposta busca tornar o aprendizado de tecnologia mais simples, acessível e p
 
 ## 🌎 Objetivos de Desenvolvimento Sustentável
 
-O projeto está alinhado aos seguintes **Objetivos de Desenvolvimento Sustentável (ODS)**:
+O projeto está alinhado aos seguintes **ODS**:
 
 ### ODS 04 — Educação de Qualidade
 
@@ -54,29 +51,25 @@ Utilizar a tecnologia como ferramenta de inclusão e redução das desigualdades
 
 ---
 
-## 🌐 Website
+## 🌐 Website do Projeto
 
-O projeto possui um website funcional desenvolvido em HTML.
+### 🚀 [ACESSAR O WEBSITE DE ALFABETIZAÇÃO DIGITAL](https://luantonetto.github.io/Alfabetizacao-digital/)
 
-### 🚀 Acessar o projeto
+O website está publicado utilizando **GitHub Pages** e pode ser acessado diretamente pelo navegador.
 
-**[▶️ Abrir o Website de Alfabetização Digital](./alfabetizacao_digital.html)**
+**Disponível para:**
 
-O website pode ser utilizado para:
-
-* Demonstração ao vivo;
-* Testes de usabilidade;
-* Apresentação para a comunidade;
-* Apoio às atividades de alfabetização digital.
-
-
+* ✅ Demonstração ao vivo;
+* ✅ Testes de usabilidade;
+* ✅ Apresentação para a comunidade;
+* ✅ Apoio às atividades de alfabetização digital.
 
 ---
 
 ## 📂 Estrutura do Projeto
 
 ```text
-📦 projeto-alfabetizacao-digital
+📦 Alfabetizacao-digital
 │
 ├── 📄 README.md
 ├── 📄 LEIA_PRIMEIRO.md
@@ -93,14 +86,14 @@ O website pode ser utilizado para:
 
 ## 📚 Documentação
 
-| Arquivo                                                    | Descrição                         |
-| ---------------------------------------------------------- | --------------------------------- |
-| 📑 [Trabalho Final Completo](./Trabalho_Final_Completo.md) | Relatório completo do projeto     |
-| 🌐 [Website](./alfabetizacao_digital.html)                 | Página educativa funcional        |
-| 📋 [Plano de Execução](./Plano_Execucao_Projeto.md)        | Planejamento e etapas de execução |
-| 🛠️ [Ferramentas Práticas](./Ferramentas_Praticas.md)      | Templates, materiais e roteiros   |
-| ✅ [Checklist de Progresso](./Checklist_Progresso.md)       | Acompanhamento das atividades     |
-| 📖 [Leia Primeiro](./LEIA_PRIMEIRO.md)                     | Guia inicial de utilização        |
+| Arquivo                                                            | Descrição                         |
+| ------------------------------------------------------------------ | --------------------------------- |
+| 📑 [Trabalho Final Completo](./Trabalho_Final_Completo.md)         | Relatório completo do projeto     |
+| 🌐 [Website](https://luantonetto.github.io/Alfabetizacao-digital/) | Acesso ao website publicado       |
+| 📋 [Plano de Execução](./Plano_Execucao_Projeto.md)                | Planejamento e etapas de execução |
+| 🛠️ [Ferramentas Práticas](./Ferramentas_Praticas.md)              | Templates, materiais e roteiros   |
+| ✅ [Checklist de Progresso](./Checklist_Progresso.md)               | Acompanhamento das atividades     |
+| 📖 [Leia Primeiro](./LEIA_PRIMEIRO.md)                             | Guia inicial de utilização        |
 
 ---
 
@@ -108,21 +101,15 @@ O website pode ser utilizado para:
 
 ### 1. Consulte a documentação
 
-Comece pelo [Trabalho Final Completo](./Trabalho_Final_Completo.md) para conhecer o projeto, seus objetivos, metodologia e resultados esperados.
+Comece pelo [Trabalho Final Completo](./Trabalho_Final_Completo.md) para conhecer o projeto, seus objetivos, metodologia e resultados.
 
 ### 2. Acesse o website
 
-Abra o arquivo:
-
-```text
-alfabetizacao_digital.html
-```
-
-O arquivo pode ser aberto diretamente em um navegador.
+👉 **[Clique aqui para acessar o projeto online](https://luantonetto.github.io/Alfabetizacao-digital/)**
 
 ### 3. Consulte os materiais complementares
 
-Utilize o plano de execução, as ferramentas práticas e o checklist para acompanhar e compreender as etapas do projeto.
+Utilize o plano de execução, as ferramentas práticas e o checklist para acompanhar as etapas do projeto.
 
 ---
 
@@ -142,10 +129,10 @@ O cronograma previsto possui duração de **12 dias**, abrangendo as etapas de d
 * ✅ Metodologia estruturada em 5 fases;
 * ✅ Cronograma de 12 dias;
 * ✅ Website educativo funcional;
+* ✅ Publicação do website via GitHub Pages;
 * ✅ Materiais e documentação complementar;
 * ✅ Considerações finais;
-* ✅ Referências bibliográficas;
-* ✅ Materiais para demonstração e testes de usabilidade.
+* ✅ Referências bibliográficas.
 
 ---
 
