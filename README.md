@@ -69,7 +69,7 @@ O website pode ser utilizado para:
 * Apresentação para a comunidade;
 * Apoio às atividades de alfabetização digital.
 
-> **Dica:** caso o projeto esteja publicado utilizando GitHub Pages, o website também poderá ser acessado diretamente por meio da URL pública do repositório.
+
 
 ---
 
